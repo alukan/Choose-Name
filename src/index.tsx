@@ -11,13 +11,13 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <StateProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}/>
-        <Route path="/settings" element={<Settings />} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/settings" element={<Settings />} />
           {/*<Route path="*" element={<NoPage />} />*/}
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
     </StateProvider>
   </React.StrictMode>
 );

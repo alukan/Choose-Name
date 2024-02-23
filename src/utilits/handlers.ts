@@ -1,5 +1,5 @@
 
-// I could pass everything without StateContext, but I wanted to have practice with it.
+
 const handleSave = async (setNames: React.Dispatch<React.SetStateAction<string[]>>, names: string[],
     setSaved: React.Dispatch<React.SetStateAction<string[]>>, saved: string[], name: string) => {
     
