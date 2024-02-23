@@ -1,5 +1,4 @@
 import { createContext, useContext, ReactNode, useState } from 'react';
-import namesData from './data/names.json';
 
 interface StateStringArrayProps {
     state: string[];
