@@ -1,4 +1,4 @@
-import { useNamesContext, useSavedContext, useChosenContext } from '../StateContext';
+import { useNamesContext, useSavedContext } from '../StateContext';
 import { ButtonContainer, CardContainer, Title } from '../styles/CardStyles';
 import { Button } from '../styles/RegularStyles';
 interface CardProps {

@@ -9,7 +9,6 @@ interface Callbacks {
 export const getNamesData = async (setNames: React.Dispatch<React.SetStateAction<string[]>>, { CallbackBefore, CallbackAfter }: Callbacks) => {
     const gender = localStorage.getItem('gender');
     const popular = localStorage.getItem('popular');
-    console.log(gender, popular);
     const apiKey = process.env.REACT_APP_API_KEY;
     CallbackBefore ? CallbackBefore() : null;
     axios({
@@ -22,7 +21,6 @@ export const getNamesData = async (setNames: React.Dispatch<React.SetStateAction
     })
         .finally(() => { CallbackAfter ? CallbackAfter() : null; })
         .then(response => {
-            console.log(response.data);
             setNames(response.data)
         })
         .catch(error => {

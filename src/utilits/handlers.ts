@@ -9,7 +9,6 @@ const handleSave = async (setNames: React.Dispatch<React.SetStateAction<string[]
 
 const handleDelete = async (setNames: React.Dispatch<React.SetStateAction<string[]>>, names: string[]) => {
 
-    console.log("start");
     if (names.length > 0) {
         const newNames = [...names];
         newNames.shift();

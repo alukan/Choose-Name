@@ -22,11 +22,11 @@ function App() {
     if (!gender || !popular) {
       navigate('/settings');
     }
-  }, [history]);
+  }, [navigate]);
 
   useEffect(() => {
-    console.log("effect")
     getNamesData(setNames, { CallbackAfter: () => { setLoading(false) } });
+    // eslint-disable-next-line
   }, []);
 
   const restart = () => {
@@ -59,7 +59,7 @@ function App() {
                   ))}
                 </ListContainer>
               </>) :
-              <h3> You didn't like any names</h3>
+              <h3> You didn&apos;t like any names</h3>
             }
           </>
         )) : (
